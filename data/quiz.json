@@ -885,12 +885,12 @@
     "options": [
       "Eliberează automat memoria ocupată de obiecte",
       "Poate fi controlat complet de programator",
-      "Apelează metoda finalize() înainte de ștergerea obiectului (Corect în context academic, deși metoda e deprecated în versiunile noi de Java)",
+      "Apelează metoda finalize() înainte de ștergerea obiectului",
       "Șterge obiectele care nu mai sunt referite"
     ],
     "answer": [
       "Eliberează automat memoria ocupată de obiecte",
-      "Apelează metoda finalize() înainte de ștergerea obiectului (Corect în context academic, deși metoda e deprecated în versiunile noi de Java)",
+      "Apelează metoda finalize() înainte de ștergerea obiectului",
       "Șterge obiectele care nu mai sunt referite"
     ]
   },
