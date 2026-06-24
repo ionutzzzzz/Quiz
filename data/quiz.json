@@ -1,0 +1,968 @@
+[
+  {
+    "id": 1,
+    "question": "Care dintre următoarele șabloane de proiectare sunt folosite în Java Collections Framework?",
+    "options": [
+      "Iterator",
+      "Proxy element",
+      "Composite command",
+      "Factory constructor"
+    ],
+    "answer": ["Iterator"]
+  },
+  {
+    "id": 2,
+    "question": "Care dintre următoarele afirmații despre constructori sunt adevărate?",
+    "options": [
+      "Constructorii au același nume cu clasa",
+      "Constructorii pot fi declarați cu tipuri de return",
+      "Dacă nu declarăm constructor, Java adaugă unul implicit",
+      "O clasă poate avea mai mulți constructori"
+    ],
+    "answer": ["Constructorii au același nume cu clasa", "Dacă nu declarăm constructor, Java adaugă unul implicit", "O clasă poate avea mai mulți constructori"]
+  },
+  {
+    "id": 3,
+    "question": "Care dintre următoarele afirmații despre tipurile generice sunt adevărate?",
+    "options": [
+      "Elimină necesitatea cast-urilor explicite când se lucrează cu colecții",
+      "Permit crearea de clase parametrizate",
+      "Oferă siguranță la nivel de tip",
+      "Sunt verificate la runtime"
+    ],
+    "answer": ["Elimină necesitatea cast-urilor explicite când se lucrează cu colecții", "Permit crearea de clase parametrizate", "Oferă siguranță la nivel de tip"]
+  },
+  {
+    "id": 4,
+    "question": "Care dintre următoarele afirmații despre diagramele de clase sunt adevărate?",
+    "options": [
+      "Diagrama de clase arată structura statică a unui sistem",
+      "Diagrama de clase arată ordinea în care apar evenimentele",
+      "Diagrama de clase include clase, atribute și metode",
+      "Diagrama de clase arată cum obiectele interacționează în timp"
+    ],
+    "answer": ["Diagrama de clase arată structura statică a unui sistem", "Diagrama de clase include clase, atribute și metode"]
+  },
+  {
+    "id": 5,
+    "question": "Care dintre următoarele afirmații despre supraîncărcarea metodei sunt adevărate?",
+    "options": [
+      "Supraîncărcarea metodei permite metodelor dintr-o clasă să aibă același nume, dar liste de parametri diferite",
+      "Supraîncărcarea metodei se face în interfețe",
+      "Supraîncărcarea metodei se face în clase derivate",
+      "Supraîncărcarea metodei poate schimba tipul de return al metodelor"
+    ],
+    "answer": ["Supraîncărcarea metodei permite metodelor dintr-o clasă să aibă același nume, dar liste de parametri diferite"]
+  },
+  {
+    "id": 6,
+    "question": "Care dintre următoarele afirmații despre membrii statici sunt adevărate?",
+    "options": [
+      "Sunt comuni tuturor instanțelor clasei",
+      "Pot accesa direct membri non-statici",
+      "Pot fi accesați prin numele clasei",
+      "Sunt inițializați la încărcarea clasei"
+    ],
+    "answer": ["Sunt comuni tuturor instanțelor clasei", "Pot fi accesați prin numele clasei", "Sunt inițializați la încărcarea clasei"]
+  },
+  {
+    "id": 7,
+    "question": "Care sunt cele trei categorii principale de șabloane de proiectare?",
+    "options": [
+      "Creaționale (Creational)",
+      "Funcționale (Functional)",
+      "Structurale (Structural)",
+      "Comportamentale (Behavioral)"
+    ],
+    "answer": ["Creaționale (Creational)", "Structurale (Structural)", "Comportamentale (Behavioral)"]
+  },
+  {
+    "id": 8,
+    "question": "Care dintre următoarele sunt adevărate despre colecțiile Java?",
+    "options": [
+      "ArrayList face parte din Java Collections Framework",
+      "Set permite elemente duplicate",
+      "Map permite chei duplicate",
+      "List permite elemente duplicate"
+    ],
+    "answer": ["ArrayList face parte din Java Collections Framework", "List permite elemente duplicate"]
+  },
+  {
+    "id": 9,
+    "question": "Care dintre următoarele clase fac parte din fluxurile de octeți?",
+    "options": [
+      "InputStream",
+      "OutputStream",
+      "Reader",
+      "FileInputStream"
+    ],
+    "answer": ["InputStream", "OutputStream", "FileInputStream"]
+  },
+  {
+    "id": 10,
+    "question": "Care dintre următoarele afirmații despre clasele abstracte din Java sunt adevărate?",
+    "options": [
+      "O clasă abstractă nu poate fi instanțiată",
+      "O clasă abstractă poate avea metode abstracte",
+      "O clasă abstractă poate fi implementată de o interfață",
+      "O clasă abstractă poate avea atât metode abstracte cât și concrete"
+    ],
+    "answer": ["O clasă abstractă nu poate fi instanțiată", "O clasă abstractă poate avea metode abstracte", "O clasă abstractă poate avea atât metode abstracte cât și concrete"]
+  },
+  {
+    "id": 11,
+    "question": "Care dintre următoarele reprezintă avantaje ale folosirii șabloanelor de proiectare?",
+    "options": [
+      "Îmbunătățesc comunicarea între dezvoltatori",
+      "Facilitează reutilizarea codului",
+      "Oferă soluții testate pentru probleme recurente",
+      "Garantează performanță optimă"
+    ],
+    "answer": ["Îmbunătățesc comunicarea între dezvoltatori", "Facilitează reutilizarea codului", "Oferă soluții testate pentru probleme recurente"]
+  },
+  {
+    "id": 12,
+    "question": "Care dintre următoarele afirmații despre interfețele din Java sunt adevărate?",
+    "options": [
+      "O interfață poate conține metode fără implementare",
+      "O interfață poate conține metode default",
+      "O interfață poate conține constructori statici",
+      "O interfață poate conține metode statice"
+    ],
+    "answer": ["O interfață poate conține metode fără implementare", "O interfață poate conține metode default", "O interfață poate conține metode statice"]
+  },
+  {
+    "id": 13,
+    "question": "Care dintre următoarele afirmații despre șablonul Singleton sunt adevărate?",
+    "options": [
+      "Asigură că o clasă are o singură instanță",
+      "Singletonul poate fi creat folosind un constructor privat și o metodă statică",
+      "Singletonul poate fi creat folosind un constructor public",
+      "Singletonul este folosit pentru a monitoriza evenimentele într-un sistem"
+    ],
+    "answer": ["Asigură că o clasă are o singură instanță", "Singletonul poate fi creat folosind un constructor privat și o metodă statică"]
+  },
+  {
+    "id": 14,
+    "question": "Care dintre următoarele sunt șabloane de proiectare creaționale?",
+    "options": [
+      "Builder",
+      "Factory Method",
+      "Singleton",
+      "Observer"
+    ],
+    "answer": ["Builder", "Factory Method", "Singleton"]
+  },
+  {
+    "id": 15,
+    "question": "Care dintre următoarele tipuri de clase interne există în Java?",
+    "options": [
+      "Clase interne de instanță",
+      "Clase locale",
+      "Clase interne statice",
+      "Clase anonime"
+    ],
+    "answer": ["Clase interne de instanță", "Clase locale", "Clase interne statice", "Clase anonime"]
+  },
+  {
+    "id": 16,
+    "question": "Care dintre următoarele sunt caracteristici ale unui obiect imuabil?",
+    "options": [
+      "Starea nu se poate schimba după creare",
+      "Clasa este declarată final",
+      "Există metode setter",
+      "Toate câmpurile sunt finale"
+    ],
+    "answer": ["Starea nu se poate schimba după creare", "Clasa este declarată final", "Toate câmpurile sunt finale"]
+  },
+  {
+    "id": 17,
+    "question": "Care dintre următoarele afirmații despre șablonul Singleton sunt adevărate?",
+    "options": [
+      "Asigură existența unui singur obiect al unei clase în cadrul sistemului",
+      "Obiectul este creat o singură dată și reutilizat de diverse componente",
+      "Previne problemele legate de sincronizarea accesului la obiecte",
+      "Permite crearea mai multor instanțe pentru performanță îmbunătățită"
+    ],
+    "answer": ["Asigură existența unui singur obiect al unei clase în cadrul sistemului", "Obiectul este creat o singură dată și reutilizat de diverse componente"]
+  },
+  {
+    "id": 18,
+    "question": "Care dintre următoarele afirmații despre sincronizarea în Java sunt adevărate?",
+    "options": [
+      "Sincronizarea ajută la prevenirea interferenței thread-urilor prin excludere mutuală",
+      "Cuvântul cheie synchronized poate fi folosit pentru a sincroniza variabilele clasei",
+      "Cuvântul cheie synchronized poate fi folosit pentru a sincroniza o metodă",
+      "Cuvântul cheie synchronized poate fi folosit pentru a sincroniza un bloc de cod"
+    ],
+    "answer": ["Sincronizarea ajută la prevenirea interferenței thread-urilor prin excludere mutuală", "Cuvântul cheie synchronized poate fi folosit pentru a sincroniza o metodă", "Cuvântul cheie synchronized poate fi folosit pentru a sincroniza un bloc de cod"]
+  },
+  {
+    "id": 19,
+    "question": "Care dintre următoarele diagrame UML sunt echivalente din punctul de vedere al informațiilor pe care le pot modela?",
+    "options": [
+      "Diagrama de secvență",
+      "Diagrama de mașini de stare",
+      "Diagrama de clase",
+      "Diagrama de comunicare"
+    ],
+    "answer": ["Diagrama de secvență", "Diagrama de comunicare"]
+  },
+  {
+    "id": 20,
+    "question": "Care dintre următoarele afirmații despre cuvântul cheie final sunt adevărate?",
+    "options": [
+      "O metodă final nu poate fi suprascrisă",
+      "O clasă final nu poate fi extinsă",
+      "Un parametru final poate fi modificat în metodă",
+      "O variabilă final nu poate fi reasignată"
+    ],
+    "answer": ["O metodă final nu poate fi suprascrisă", "O clasă final nu poate fi extinsă", "O variabilă final nu poate fi reasignată"]
+  },
+  {
+    "id": 21,
+    "question": "Care dintre următoarele definesc aspecte legate de gestionarea excepțiilor în Java?",
+    "options": [
+      "Blocurile try-catch",
+      "Cuvântul cheie final",
+      "Cuvântul cheie throw",
+      "Cuvântul cheie throws"
+    ],
+    "answer": ["Blocurile try-catch", "Cuvântul cheie throw", "Cuvântul cheie throws"]
+  },
+  {
+    "id": 22,
+    "question": "Care dintre următoarele secvențe de comenzi Git sunt corecte pentru a salva și încărca modificările în repository-ul remote?",
+    "options": [
+      "git add, git commit, git push",
+      "git add, git push, git commit",
+      "git push, git add, git commit",
+      "git commit, git add, git push"
+    ],
+    "answer": ["git add, git commit, git push"]
+  },
+  {
+    "id": 23,
+    "question": "Care dintre următoarele afirmații despre moștenire în Java sunt adevărate?",
+    "options": [
+      "Cuvântul cheie extends este folosit pentru a moșteni o clasă",
+      "O subclasă poate suprascrie metodele superclasei sale",
+      "Toate metodele din superclasă pot fi accesate în subclasă",
+      "O subclasă poate moșteni de la multiple superclase"
+    ],
+    "answer": ["Cuvântul cheie extends este folosit pentru a moșteni o clasă", "O subclasă poate suprascrie metodele superclasei sale"]
+  },
+  {
+    "id": 24,
+    "question": "Care dintre următoarele relații este cea mai slabă relație într-o diagramă de clase?",
+    "options": [
+      "Dependență",
+      "Compoziție",
+      "Moștenire",
+      "Agregare"
+    ],
+    "answer": ["Dependență"]
+  },
+  {
+    "id": 25,
+    "question": "Care dintre următoarele reprezintă caracteristici ale șablonului Proxy?",
+    "options": [
+      "Controlează accesul la obiectul original",
+      "Înlocuiește complet funcționalitatea obiectului original",
+      "Permite efectuarea de acțiuni înainte sau după solicitare",
+      "Furnizează un substitut sau înlocuitor pentru obiectul original"
+    ],
+    "answer": ["Controlează accesul la obiectul original", "Permite efectuarea de acțiuni înainte sau după solicitare", "Furnizează un substitut sau înlocuitor pentru obiectul original"]
+  },
+  {
+    "id": 26,
+    "question": "Care dintre următoarele afirmații despre try-with-resources sunt adevărate?",
+    "options": [
+        "A fost introdus în pachetul java.util",
+        "Elimină necesitatea blocului finally pentru închiderea resurselor",
+        "Poate fi folosit cu orice clasă care implementează AutoCloseable",
+        "Închide automat resursele declarate"
+    ],
+    "answer": [
+        "Elimină necesitatea blocului finally pentru închiderea resurselor",
+        "Poate fi folosit cu orice clasă care implementează AutoCloseable",
+        "Închide automat resursele declarate"
+    ]
+  },
+  {
+      "id": 27,
+      "question": "Marcați care afirmații sunt adevărate:",
+      "options": [
+          "În cazul agregării atributul este inițializat în constructor",
+          "În cazul agregării atributul este transmis ca parametru în constructor",
+          "În cazul compoziției atributul este transmis ca parametru în constructor",
+          "În cazul compoziției atributul este inițializat în constructor"
+      ],
+      "answer": [
+          "În cazul agregării atributul este transmis ca parametru în constructor",
+          "În cazul compoziției atributul este inițializat în constructor"
+      ]
+  },
+  {
+      "id": 28,
+      "question": "Care dintre următoarele afirmații despre încapsulare sunt adevărate?",
+      "options": [
+          "Încapsularea scade complexitatea constructorului.",
+          "Încapsularea este utilizată doar pentru metode, nu și pentru variabile.",
+          "Încapsularea se realizează folosind modificatorul de acces private.",
+          "Încapsularea ajută la ascunderea datelor."
+      ],
+      "answer": [
+          "Încapsularea se realizează folosind modificatorul de acces private.",
+          "Încapsularea ajută la ascunderea datelor."
+      ]
+  },
+  {
+      "id": 29,
+      "question": "Care dintre următoarele afirmații sunt adevărate despre interfața Map?",
+      "options": [
+          "Implementarea HashMap este echivalenta cu HashSet.",
+          "Permite chei duplicate.",
+          "Map-ează chei unice la valori.",
+          "Poate conține valori duplicate."
+      ],
+      "answer": [
+          "Map-ează chei unice la valori.",
+          "Poate conține valori duplicate."
+      ]
+  },
+  {
+      "id": 30,
+      "question": "Care dintre următoarele afirmații despre metoda join() sunt adevărate?",
+      "options": [
+          "Permite unui thread să aștepte finalizarea altuia.",
+          "Poate fi folosita pentru a uni doua thread-uri.",
+          "Trebuie apelată pe un obiect thread.",
+          "Determina thread-ul curent să devină un thread sincron."
+      ],
+      "answer": [
+          "Permite unui thread să aștepte finalizarea altuia.",
+          "Trebuie apelată pe un obiect thread."
+      ]
+  },
+  {
+      "id": 31,
+      "question": "Care dintre următoarele reprezintă utilizări corecte ale cuvântului cheie this?",
+      "options": [
+          "Pentru a accesa membri statici",
+          "Pentru a apela un constructor din alt constructor",
+          "Pentru a diferenția între parametrii metodei și atributele clasei",
+          "Pentru a referi obiectul curent"
+      ],
+      "answer": [
+          "Pentru a apela un constructor din alt constructor",
+          "Pentru a diferenția între parametrii metodei și atributele clasei",
+          "Pentru a referi obiectul curent"
+      ]
+  },
+  {
+      "id": 32,
+      "question": "Care dintre următoarele aspecte corecte in ceea ce priveste implementarea unei interfață în Java?",
+      "options": [
+          "O interfață poate extinde o altă interfață.",
+          "O clasă abstractă poate implementa o interfață.",
+          "Folosind cuvântul cheie implements.",
+          "O clasă poate implementa multiple interfețe."
+      ],
+      "answer": [
+          "O interfață poate extinde o altă interfață.",
+          "O clasă abstractă poate implementa o interfață.",
+          "Folosind cuvântul cheie implements.",
+          "O clasă poate implementa multiple interfețe."
+      ]
+  },
+  {
+      "id": 33,
+      "question": "Care dintre următoarele reprezintă caracteristici ale șablonului Builder?",
+      "options": [
+          "Creează automat toate obiectele dintr-o singură operație",
+          "Permite crearea unui obiect pas cu pas cu flexibilitate ridicată",
+          "Permite construirea obiectelor complexe într-un mod modular",
+          "Separă procesul de creare a unui obiect complex de structura acestuia"
+      ],
+      "answer": [
+          "Permite crearea unui obiect pas cu pas cu flexibilitate ridicată",
+          "Permite construirea obiectelor complexe într-un mod modular",
+          "Separă procesul de creare a unui obiect complex de structura acestuia"
+      ]
+  },
+  {
+      "id": 34,
+      "question": "Care dintre următoarele afirmații despre Law of Demeter sunt adevărate?",
+      "options": [
+          "Principiul limitează accesul la obiecte prin intermediul altor obiecte",
+          "Un obiect poate apela metode din obiectele cu care colaborează direct",
+          "Un obiect poate accesa alte obiecte prin intermediul colaboratorilor săi",
+          "Principiul promovează cuplarea strânsă intre obiecte"
+      ],
+      "answer": [
+          "Principiul limitează accesul la obiecte prin intermediul altor obiecte",
+          "Un obiect poate apela metode din obiectele cu care colaborează direct"
+      ]
+  },
+  {
+      "id": 35,
+      "question": "Care dintre următoarele reprezintă caracteristici ale încapsulării?",
+      "options": [
+          "Elimină complet posibilitatea de comunicare între obiecte",
+          "Previne modificarea directă a stării interne a obiectelor",
+          "Facilitează protecția datelor interne a obiectelor",
+          "Permite accesul la starea obiectelor doar prin metode specifice"
+      ],
+      "answer": [
+          "Previne modificarea directă a stării interne a obiectelor",
+          "Facilitează protecția datelor interne a obiectelor",
+          "Permite accesul la starea obiectelor doar prin metode specifice"
+      ]
+  },
+  {
+      "id": 36,
+      "question": "Marcați toate relațiile care sunt echivalente din punctul de vedere al implementării:",
+      "options": [
+          "Asocierea",
+          "Agregarea",
+          "Moștenirea",
+          "Dependența"
+      ],
+      "answer": [
+          "Asocierea",
+          "Agregarea"
+      ]
+  },
+  {
+      "id": 37,
+      "question": "Care dintre următoarele afirmații despre principiul încapsulării sunt adevărate?",
+      "options": [
+          "Permite accesul direct la toate atributele clasei",
+          "Permite ascunderea detaliilor de implementare",
+          "Se realizează prin folosirea modificatorilor de acces",
+          "Facilitează mentenanța codului"
+      ],
+      "answer": [
+          "Permite ascunderea detaliilor de implementare",
+          "Se realizează prin folosirea modificatorilor de acces",
+          "Facilitează mentenanța codului"
+      ]
+  },
+  {
+      "id": 38,
+      "question": "Care dintre următoarele metode sunt definite în clasa Thread?",
+      "options": [
+          "wait()",
+          "run()",
+          "start()",
+          "sleep(long millis)"
+      ],
+      "answer": [
+          "run()",
+          "start()",
+          "sleep(long millis)"
+      ]
+  },
+  {
+      "id": 39,
+      "question": "Care dintre următoarele reprezintă principiile fundamentale ale programării orientate pe obiecte?",
+      "options": [
+          "Încapsularea",
+          "Abstractizarea",
+          "Moștenirea",
+          "Compilarea",
+          "Polimorfismul"
+      ],
+      "answer": [
+          "Încapsularea",
+          "Abstractizarea",
+          "Moștenirea",
+          "Polimorfismul"
+      ]
+  },
+  {
+      "id": 40,
+      "question": "Care dintre următoarele reprezintă principiile SOLID?",
+      "options": [
+          "Single Responsibility Principle",
+          "Interface Segregation Principle",
+          "Open/Closed Principle",
+          "Liskov Substitution Principle",
+          "Static Initialization Principle"
+      ],
+      "answer": [
+          "Single Responsibility Principle",
+          "Interface Segregation Principle",
+          "Open/Closed Principle",
+          "Liskov Substitution Principle"
+      ]
+  },
+  {
+      "id": 41,
+      "question": "Care dintre următoarele sunt șabloane de proiectare structurale?",
+      "options": [
+          "Adapter",
+          "Composite",
+          "Decorator",
+          "Command"
+      ],
+      "answer": [
+          "Adapter",
+          "Composite",
+          "Decorator"
+      ]
+  },
+  {
+      "id": 42,
+      "question": "Care dintre următoarele sunt adevărate despre clasele și obiectele Java?",
+      "options": [
+          "Clasele pot conține câmpuri, metode și constructori.",
+          "O clasă este un șablon pentru obiecte.",
+          "Un obiect este o instanță a unei clase.",
+          "Clasele pot fi create folosind cuvântul cheie new."
+      ],
+      "answer": [
+          "Clasele pot conține câmpuri, metode și constructori.",
+          "O clasă este un șablon pentru obiecte.",
+          "Un obiect este o instanță a unei clase."
+      ]
+  },
+  {
+      "id": 43,
+      "question": "Care dintre următoarele afirmații despre principiile SOLID sunt adevărate?",
+      "options": [
+          "Single Responsibility Principle stipulează că o clasă trebuie să aibă o singură responsabilitate",
+          "Open/Closed Principle permite modificarea entităților software pentru extindere",
+          "Interface Segregation Principle recomandă interfețe mari cu toate metodele posibile",
+          "Liskov Substitution Principle permite înlocuirea clasei de bază cu clasa derivată fără impact asupra clientului"
+      ],
+      "answer": [
+          "Single Responsibility Principle stipulează că o clasă trebuie să aibă o singură responsabilitate",
+          "Liskov Substitution Principle permite înlocuirea clasei de bază cu clasa derivată fără impact asupra clientului"
+      ]
+  },
+  {
+      "id": 44,
+      "question": "Care dintre următoarele sunt adevărate despre interfața Runnable?",
+      "options": [
+          "Conține metoda start()",
+          "Furnizează metode pentru a gestiona ciclul de viață al thread-urilor.",
+          "Are o singură metodă numită run().",
+          "Poate fi folosită pentru a crea un thread prin implementarea acesteia de catre o clasa."
+      ],
+      "answer": [
+          "Are o singură metodă numită run().",
+          "Poate fi folosită pentru a crea un thread prin implementarea acesteia de catre o clasa."
+      ]
+  },
+  {
+      "id": 45,
+      "question": "Care dintre următoarele afirmații despre pachete sunt adevărate?",
+      "options": [
+          "O clasă poate aparține la mai multe pachete simultan",
+          "Numele pachetului determină structura de directoare",
+          "Pachetele ajută la organizarea claselor",
+          "Pachetul java.lang este importat automat"
+      ],
+      "answer": [
+          "Numele pachetului determină structura de directoare",
+          "Pachetele ajută la organizarea claselor",
+          "Pachetul java.lang este importat automat"
+      ]
+  },
+  {
+      "id": 46,
+      "question": "Care dintre următoarele fac parte din Java Collections Framework?",
+      "options": [
+          "PrintStackTrace",
+          "HashMap",
+          "Vector",
+          "ArrayList"
+      ],
+      "answer": [
+          "HashMap",
+          "Vector",
+          "ArrayList"
+      ]
+  },
+  {
+      "id": 47,
+      "question": "Care dintre următoarele afirmații despre șablonul Decorator sunt adevărate?",
+      "options": [
+          "Modifică structura internă a obiectului original",
+          "Se bazează pe principiul compoziției pentru extinderea funcționalității",
+          "Permite adăugarea comportamentului unui obiect în timpul rulării",
+          "Oferă aceeași interfață ca obiectul original pentru utilizare transparentă"
+      ],
+      "answer": [
+          "Se bazează pe principiul compoziției pentru extinderea funcționalității",
+          "Permite adăugarea comportamentului unui obiect în timpul rulării",
+          "Oferă aceeași interfață ca obiectul original pentru utilizare transparentă"
+      ]
+  },
+  {
+      "id": 48,
+      "question": "Care dintre următoarele diagrame fac parte din UML?",
+      "options": [
+          "Diagrama de clase",
+          "Diagrama de flux de date",
+          "Diagrama de activitate",
+          "Diagrama de secvență"
+      ],
+      "answer": [
+          "Diagrama de clase",
+          "Diagrama de activitate",
+          "Diagrama de secvență"
+      ]
+  },
+  {
+      "id": 49,
+      "question": "Care dintre următoarele cuvinte cheie sunt modificatori de acces în Java?",
+      "options": [
+          "package",
+          "protected",
+          "public",
+          "private",
+          "static"
+      ],
+      "answer": [
+          "protected",
+          "public",
+          "private"
+      ]
+  },
+  {
+      "id": 50,
+      "question": "Care dintre următoarele șabloane de proiectare sunt de tip structural?",
+      "options": [
+          "Decorator",
+          "Iterator",
+          "Facade",
+          "Observer",
+          "Adapter"
+      ],
+      "answer": [
+          "Decorator",
+          "Facade",
+          "Adapter"
+      ]
+  },
+  {
+      "id": 51,
+      "question": "Ce reprezintă un șablon de proiectare (design pattern)?",
+      "options": [
+          "Un cod gata implementat care poate fi copiat",
+          "Un ghid conceptual pentru rezolvarea problemelor standard",
+          "O metodă de optimizare a performanței aplicației",
+          "O soluție generală pentru o problemă recurentă în proiectarea software"
+      ],
+      "answer": [
+          "Un ghid conceptual pentru rezolvarea problemelor standard",
+          "O soluție generală pentru o problemă recurentă în proiectarea software"
+      ]
+  },
+  {
+    "id": 52,
+    "question": "Care dintre urmatoarele afirmatii despre metoda wait() sunt adevărate?",
+    "options": [
+      "Poate fi apelată doar în cadrul unui context sincronizat.",
+      "Cauzează așteptarea thread-ului curent până când un alt thread invocă metoda notify() sau metoda notifyAll() pentru acel obiect.",
+      "Eliberează monitorul rechiziționat de blocul sincronizat.",
+      "Poate fi apelată pe orice obiect deoarece wait și notify fac parte din clasa Object."
+    ],
+    "answer": [
+      "Poate fi apelată doar în cadrul unui context sincronizat.",
+      "Cauzează așteptarea thread-ului curent până când un alt thread invocă metoda notify() sau metoda notifyAll() pentru acel obiect.",
+      "Eliberează monitorul rechiziționat de blocul sincronizat.",
+      "Poate fi apelată pe orice obiect deoarece wait și notify fac parte din clasa Object."
+    ]
+  },
+  {
+    "id": 53,
+    "question": "Care dintre următoarele sunt modalități de a crea un thread în Java?",
+    "options": [
+      "Extinderea clasei Thread",
+      "Implementarea interfeței ThreadFactory",
+      "Implementarea interfeței Runnable",
+      "Implementarea interfeței Thread (Thread este o clasă, nu o interfață)"
+    ],
+    "answer": [
+      "Extinderea clasei Thread",
+      "Implementarea interfeței Runnable"
+    ]
+  },
+  {
+    "id": 54,
+    "question": "Care dintre următoarele colecții Java permit păstrarea obiectelor în ordine sortată?",
+    "options": [
+      "TreeMap care sortează automat cheile",
+      "TreeSet care sortează automat elementele",
+      "SortedList care menține ordinea inserării",
+      "LinkedHashSet care menține ordinea inserării (Menține ordinea inserării, nu ordinea sortată valoric)"
+    ],
+    "answer": [
+      "TreeMap care sortează automat cheile",
+      "TreeSet care sortează automat elementele"
+    ]
+  },
+  {
+    "id": 55,
+    "question": "Care dintre următoarele aspecte țin de polimorfismul dinamic în Java?",
+    "options": [
+      "Suprascrierea metodelor (Method Overriding)",
+      "Compoziția metodelor",
+      "Supraîncărcarea metodelor (Acesta este polimorfism static/compile-time)",
+      "Suprascrierea claselor"
+    ],
+    "answer": [
+      "Suprascrierea metodelor (Method Overriding)"
+    ]
+  },
+  {
+    "id": 56,
+    "question": "Care dintre următoarele diagrame sunt folosite pentru a modela comportamentul dinamic al unui sistem?",
+    "options": [
+      "Diagrama de secvență",
+      "Diagrama de pachete",
+      "Diagrama de componente",
+      "Diagrama de activitate"
+    ],
+    "answer": [
+      "Diagrama de secvență",
+      "Diagrama de activitate"
+    ]
+  },
+  {
+    "id": 57,
+    "question": "Care dintre următoarele afirmații despre moștenire și polimorfism sunt adevărate?",
+    "options": [
+      "Suprascrierea metodei se poate face in clasa de baza",
+      "Moștenirea reprezintă o relație de tip \"is-a-type-of\"",
+      "Moștenirea reprezintă o relație de tip \"has-a\" (Aceasta este agregarea/compoziția)",
+      "Suprascrierea metodei se poate face in clasa derivata",
+      "Polimorfismul permite utilizarea unei singure clase de baza pentru a trata obiecte din aceiasi ierarhie."
+    ],
+    "answer": [
+      "Moștenirea reprezintă o relație de tip \"is-a-type-of\"",
+      "Suprascrierea metodei se poate face in clasa derivata",
+      "Polimorfismul permite utilizarea unei singure clase de baza pentru a trata obiecte din aceiasi ierarhie."
+    ]
+  },
+  {
+    "id": 58,
+    "question": "Care dintre următoarele sunt stări valide ale unui thread în Java?",
+    "options": [
+      "New",
+      "Runnable",
+      "Blocked",
+      "Terminated"
+    ],
+    "answer": [
+      "New",
+      "Runnable",
+      "Blocked",
+      "Terminated"
+    ]
+  },
+  {
+    "id": 59,
+    "question": "Care dintre următoarele afirmații despre interfața Comparable sunt adevărate?",
+    "options": [
+      "compareTo returnează o valoarea booleană.",
+      "compareTo returnează o valoarea intreaga.",
+      "Interfata Comparable are o metodă numită compareTo.",
+      "Comparable este utilizat pentru a defini ordinea naturală a obiectelor."
+    ],
+    "answer": [
+      "compareTo returnează o valoarea intreaga.",
+      "Interfata Comparable are o metodă numită compareTo.",
+      "Comparable este utilizat pentru a defini ordinea naturală a obiectelor."
+    ]
+  },
+  {
+    "id": 60,
+    "question": "Care dintre următoarele clase fac parte din Java Collections Framework?",
+    "options": [
+      "ArrayList",
+      "HashSet",
+      "AbstractTableModel",
+      "HashMap"
+    ],
+    "answer": [
+      "ArrayList",
+      "HashSet",
+      "HashMap"
+    ]
+  },
+  {
+    "id": 61,
+    "question": "Care dintre următoarele clase JDBC este utilizată pentru transmiterea unei comenzi SQL către baza de date?",
+    "options": [
+      "Connection",
+      "Statement (inclusiv derivatele sale PreparedStatement și CallableStatement)",
+      "DriverManager",
+      "ResultSet"
+    ],
+    "answer": [
+      "Statement (inclusiv derivatele sale PreparedStatement și CallableStatement)"
+    ]
+  },
+  {
+    "id": 62,
+    "question": "Care dintre următoarele afirmații despre șablonul Iterator sunt adevărate?",
+    "options": [
+      "Permite accesul secvențial la elementele unei colecții",
+      "Modifică elementele colecției în timpul parcurgerii",
+      "Furnizează o interfață comună pentru parcurgerea diferitelor structuri",
+      "Ascunde reprezentările interne ale structurilor de date"
+    ],
+    "answer": [
+      "Permite accesul secvențial la elementele unei colecții",
+      "Furnizează o interfață comună pentru parcurgerea diferitelor structuri",
+      "Ascunde reprezentările interne ale structurilor de date"
+    ]
+  },
+  {
+    "id": 63,
+    "question": "Care dintre următoarele reprezintă caracteristici ale șablonului Adapter?",
+    "options": [
+      "Modifică permanent structura claselor existente",
+      "Permite colaborarea interfețelor a două clase incompatibile",
+      "Transformă interfața unei clase într-una compatibilă cu cealaltă",
+      "Facilitează integrarea sistemelor cu interfețe diferite"
+    ],
+    "answer": [
+      "Permite colaborarea interfețelor a două clase incompatibile",
+      "Transformă interfața unei clase într-una compatibilă cu cealaltă",
+      "Facilitează integrarea sistemelor cu interfețe diferite"
+    ]
+  },
+  {
+    "id": 64,
+    "question": "Care dintre următoarele sunt excepții de tip runtime (Unchecked) în Java?",
+    "options": [
+      "FileNotFoundException",
+      "IOException",
+      "NullPointerException",
+      "SQLException"
+    ],
+    "answer": [
+      "NullPointerException"
+    ]
+  },
+  {
+    "id": 65,
+    "question": "Care dintre următoarele sunt șabloane de proiectare comportamentale?",
+    "options": [
+      "Template Method",
+      "Strategy",
+      "Observer",
+      "Decorator (Acesta este structural)"
+    ],
+    "answer": [
+      "Template Method",
+      "Strategy",
+      "Observer"
+    ]
+  },
+  {
+    "id": 66,
+    "question": "Care dintre următoarele reprezintă fișierul principal de configurație Maven?",
+    "options": [
+      "pom.xml pentru configurația proiectului și dependințe",
+      "project.properties pentru proprietățile proiectului",
+      "build.xml pentru configurația proiectului (Acesta este specific Apache Ant)",
+      "maven.config pentru setările globale"
+    ],
+    "answer": [
+      "pom.xml pentru configurația proiectului și dependințe"
+    ]
+  },
+  {
+    "id": 67,
+    "question": "Care dintre următoarele afirmații despre Garbage Collector sunt adevărate?",
+    "options": [
+      "Eliberează automat memoria ocupată de obiecte",
+      "Poate fi controlat complet de programator",
+      "Apelează metoda finalize() înainte de ștergerea obiectului (Corect în context academic, deși metoda e deprecated în versiunile noi de Java)",
+      "Șterge obiectele care nu mai sunt referite"
+    ],
+    "answer": [
+      "Eliberează automat memoria ocupată de obiecte",
+      "Apelează metoda finalize() înainte de ștergerea obiectului (Corect în context academic, deși metoda e deprecated în versiunile noi de Java)",
+      "Șterge obiectele care nu mai sunt referite"
+    ]
+  },
+  {
+    "id": 68,
+    "question": "Care dintre următoarele sunt adevărate despre interfața Set?",
+    "options": [
+      "Nu permite elemente duplicate.",
+      "Permite elemente duplicate.",
+      "Mentine ordinea inserării. (Nu este garantat de interfața Set în sine, ci doar de implementări specifice precum LinkedHashSet)",
+      "Nu mentine ordinea inserarii. (Declarație general valabilă pentru HashSet, dar varianta 1 definește cel mai corect interfața Set)"
+    ],
+    "answer": [
+      "Nu permite elemente duplicate."
+    ]
+  },
+  {
+    "id": 69,
+    "question": "Care dintre următoarele afirmații despre metodele abstracte sunt adevărate?",
+    "options": [
+      "Metodele abstracte au implementare de tip abstract.",
+      "O clasă care conține metode abstracte trebuie declarată abstractă.",
+      "O metodă abstractă trebuie suprascrisă într-o subclasă (pentru ca acea subclasă să poată fi instanțiată).",
+      "Metodele abstracte nu au implementare."
+    ],
+    "answer": [
+      "O clasă care conține metode abstracte trebuie declarată abstractă.",
+      "O metodă abstractă trebuie suprascrisă într-o subclasă (pentru ca acea subclasă să poată fi instanțiată).",
+      "Metodele abstracte nu au implementare."
+    ]
+  },
+  {
+    "id": 70,
+    "question": "Care dintre următoarele clase fac parte din fluxurile de caractere (character streams)?",
+    "options": [
+      "FileReader",
+      "Writer",
+      "Reader",
+      "BufferedWriter"
+    ],
+    "answer": [
+      "FileReader",
+      "Writer",
+      "Reader",
+      "BufferedWriter"
+    ]
+  },
+  {
+    "id": 71,
+    "question": "Care dintre următoarele afirmații despre șablonul Factory Method sunt adevărate?",
+    "options": [
+      "Garantează că toate obiectele create vor avea aceeași structură",
+      "Permite crearea obiectelor imutabile",
+      "Oferă o metodă comună de creare a obiectelor pentru o clasă sau familie de clase",
+      "Separă procesul de creare a obiectelor de restul codului"
+    ],
+    "answer": [
+      "Oferă o metodă comună de creare a obiectelor pentru o clasă sau familie de clase",
+      "Separă procesul de creare a obiectelor de restul codului"
+    ]
+  },
+  {
+    "id": 72,
+    "question": "Care dintre următoarele afirmații despre șablonul Observer sunt adevărate?",
+    "options": [
+      "Definește o dependență one-to-many între obiecte astfel încât atunci când un obiect își schimbă starea, toate obiectele dependente sunt notificate și actualizate automat.",
+      "Permite schimbarea algoritmului unui obiect in timp ce pastreaza interfata sa. (Acesta este Strategy)",
+      "Este utilizat pentru a crea obiecte complexe pas cu pas. (Acesta este Builder)",
+      "Este un șablon de creare. (Este un șablon comportamental)"
+    ],
+    "answer": [
+      "Definește o dependență one-to-many între obiecte astfel încât atunci când un obiect își schimbă starea, toate obiectele dependente sunt notificate și actualizate automat."
+    ]
+  }
+]
