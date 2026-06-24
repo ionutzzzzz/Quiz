@@ -33,9 +33,18 @@ nextButton.addEventListener('click', () => {
 submitButton.addEventListener('click', submitAnswer);
 
 fetch('data/quiz.json')
-    .then(res => res.json())
+    .then(res => {
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+    })
     .then(data => {
         questions = data;
+    })
+    .catch(error => {
+        console.error('Error fetching quiz data:', error);
+        questionElement.innerText = 'Failed to load quiz questions. Please check the console for errors.';
     });
 
 function startGame() {
