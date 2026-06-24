@@ -685,7 +685,7 @@
       "Extinderea clasei Thread",
       "Implementarea interfeței ThreadFactory",
       "Implementarea interfeței Runnable",
-      "Implementarea interfeței Thread (Thread este o clasă, nu o interfață)"
+      "Implementarea interfeței Thread"
     ],
     "answer": [
       "Extinderea clasei Thread",
@@ -699,7 +699,7 @@
       "TreeMap care sortează automat cheile",
       "TreeSet care sortează automat elementele",
       "SortedList care menține ordinea inserării",
-      "LinkedHashSet care menține ordinea inserării (Menține ordinea inserării, nu ordinea sortată valoric)"
+      "LinkedHashSet care menține ordinea inserării"
     ],
     "answer": [
       "TreeMap care sortează automat cheile",
@@ -712,7 +712,7 @@
     "options": [
       "Suprascrierea metodelor (Method Overriding)",
       "Compoziția metodelor",
-      "Supraîncărcarea metodelor (Acesta este polimorfism static/compile-time)",
+      "Supraîncărcarea metodelor",
       "Suprascrierea claselor"
     ],
     "answer": [
@@ -739,7 +739,7 @@
     "options": [
       "Suprascrierea metodei se poate face in clasa de baza",
       "Moștenirea reprezintă o relație de tip \"is-a-type-of\"",
-      "Moștenirea reprezintă o relație de tip \"has-a\" (Aceasta este agregarea/compoziția)",
+      "Moștenirea reprezintă o relație de tip \"has-a\"",
       "Suprascrierea metodei se poate face in clasa derivata",
       "Polimorfismul permite utilizarea unei singure clase de baza pentru a trata obiecte din aceiasi ierarhie."
     ],
@@ -800,12 +800,12 @@
     "question": "Care dintre următoarele clase JDBC este utilizată pentru transmiterea unei comenzi SQL către baza de date?",
     "options": [
       "Connection",
-      "Statement (inclusiv derivatele sale PreparedStatement și CallableStatement)",
+      "Statement",
       "DriverManager",
       "ResultSet"
     ],
     "answer": [
-      "Statement (inclusiv derivatele sale PreparedStatement și CallableStatement)"
+      "Statement"
     ]
   },
   {
@@ -858,7 +858,7 @@
       "Template Method",
       "Strategy",
       "Observer",
-      "Decorator (Acesta este structural)"
+      "Decorator"
     ],
     "answer": [
       "Template Method",
@@ -900,8 +900,8 @@
     "options": [
       "Nu permite elemente duplicate.",
       "Permite elemente duplicate.",
-      "Mentine ordinea inserării. (Nu este garantat de interfața Set în sine, ci doar de implementări specifice precum LinkedHashSet)",
-      "Nu mentine ordinea inserarii. (Declarație general valabilă pentru HashSet, dar varianta 1 definește cel mai corect interfața Set)"
+      "Mentine ordinea inserării.",
+      "Nu mentine ordinea inserarii."
     ],
     "answer": [
       "Nu permite elemente duplicate."

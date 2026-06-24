@@ -11,12 +11,20 @@ const resultsScore = document.getElementById('results-score');
 const resultsMark = document.getElementById('results-mark');
 const restartButton = document.getElementById('restart-btn');
 const controlsElement = document.querySelector('.controls');
+const detailedResultsContainer = document.getElementById('detailed-results');
+const questionsListContainer = document.getElementById('questions-list');
+const resultsSummaryContainer = document.getElementById('results-summary');
+const previousScoresBtn = document.getElementById('previous-scores-btn');
+const previousScoresContainer = document.getElementById('previous-scores-container');
 
-let shuffledQuestions, currentQuestionIndex, score;
+let shuffledQuestions, currentQuestionIndex, score, userAnswers, quizStartTime, attempts = 0;
 let questions = [];
 
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
+previousScoresBtn.addEventListener('click', () => {
+    previousScoresContainer.classList.toggle('hide');
+});
 
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
@@ -34,6 +42,12 @@ function startGame() {
     resultsContainer.classList.add('hide');
     startButton.classList.add('hide');
     controlsElement.classList.remove('hide');
+    detailedResultsContainer.classList.add('hide');
+    previousScoresContainer.classList.add('hide');
+    userAnswers = [];
+    quizStartTime = new Date();
+    attempts++;
+
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     score = 0;
@@ -96,7 +110,14 @@ function submitAnswer() {
         const sortedSelectedAnswers = [...selectedAnswers].sort();
         const sortedCorrectAnswers = [...correctAnswers].sort();
 
-        let isCorrect = sortedSelectedAnswers.length === sortedCorrectAnswers.length && sortedSelectedAnswers.every((value, index) => value === sortedCorrectAnswers[index]);
+        const isCorrect = sortedSelectedAnswers.length === sortedCorrectAnswers.length && sortedSelectedAnswers.every((value, index) => value === sortedCorrectAnswers[index]);
+
+        userAnswers.push({
+            question: shuffledQuestions[currentQuestionIndex].question,
+            selected: selectedAnswers,
+            correct: correctAnswers,
+            isCorrect: isCorrect
+        });
 
         if (isCorrect) {
             score++;
@@ -126,12 +147,104 @@ function showResults() {
     questionContainerElement.classList.add('hide');
     controlsElement.classList.add('hide');
     resultsContainer.classList.remove('hide');
+    detailedResultsContainer.classList.remove('hide');
 
     const totalQuestions = shuffledQuestions.length;
     resultsScore.innerText = `You scored ${score} out of ${totalQuestions}!`;
 
     const mark = calculateMark(score, totalQuestions);
     resultsMark.innerText = `Your mark: ${mark}`;
+
+    const timeTaken = Math.round((new Date() - quizStartTime) / 1000);
+    resultsSummaryContainer.innerHTML = `
+        <p>Time taken: ${timeTaken} seconds</p>
+        <p>Attempts: ${attempts}</p>
+    `;
+
+    saveScore(score, totalQuestions, timeTaken);
+    displayPreviousScores();
+
+    questionsListContainer.innerHTML = '';
+    userAnswers.forEach((answer, index) => {
+        const questionElement = document.createElement('div');
+        questionElement.classList.add('question-result');
+        const status = answer.isCorrect ? '✅' : '❌';
+        questionElement.innerHTML = `
+            <div class="question-header">
+                <span>Question ${index + 1} ${status}</span>
+                <button class="toggle-answer-btn">Review</button>
+            </div>
+            <div class="question-body hide"></div>
+        `;
+        questionsListContainer.appendChild(questionElement);
+    });
+
+    document.querySelectorAll('.toggle-answer-btn').forEach((button, index) => {
+        button.addEventListener('click', () => {
+            const questionBody = button.parentElement.nextElementSibling;
+            const answer = userAnswers[index];
+            if (questionBody.classList.contains('hide')) {
+                questionBody.innerHTML = createQuestionCard(answer);
+                questionBody.classList.remove('hide');
+                button.textContent = 'Hide';
+            } else {
+                questionBody.classList.add('hide');
+                questionBody.innerHTML = '';
+                button.textContent = 'Review';
+            }
+        });
+    });
+}
+
+function createQuestionCard(answer) {
+    const questionData = questions.find(q => q.question === answer.question);
+    const optionsHtml = questionData.options.map(option => {
+        let classList = 'btn';
+        if (answer.correct.includes(option)) {
+            classList += ' correct';
+        }
+        if (answer.selected.includes(option)) {
+            classList += ' selected';
+        }
+        return `<button class="${classList}" disabled>${option}</button>`;
+    }).join('');
+
+    return `
+        <div class="question-card">
+            <div id="question">${answer.question}</div>
+            <div id="answer-buttons" class="btn-grid">${optionsHtml}</div>
+        </div>
+    `;
+}
+
+function saveScore(score, total, time) {
+    const scores = JSON.parse(localStorage.getItem('quizScores')) || [];
+    const newScore = {
+        score: score,
+        total: total,
+        time: time,
+        date: new Date().toISOString()
+    };
+    scores.push(newScore);
+    localStorage.setItem('quizScores', JSON.stringify(scores));
+}
+
+function displayPreviousScores() {
+    const scoresList = document.getElementById('scores-list');
+    const scores = JSON.parse(localStorage.getItem('quizScores')) || [];
+
+    if (scores.length === 0) {
+        scoresList.innerHTML = '<p>No previous scores found.</p>';
+        return;
+    }
+
+    scoresList.innerHTML = scores.map(score => `
+        <div class="score-item">
+            <p><strong>Date:</strong> ${new Date(score.date).toLocaleDateString()}</p>
+            <p><strong>Score:</strong> ${score.score} / ${score.total}</p>
+            <p><strong>Time:</strong> ${score.time}s</p>
+        </div>
+    `).join('');
 }
 
 function calculateMark(score, total) {
