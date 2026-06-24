@@ -75,11 +75,7 @@ function resetState() {
 
 function selectAnswer(e) {
     const selectedButton = e.target;
-    // Allow only one selection
-    Array.from(answerButtonsElement.children).forEach(button => {
-        button.classList.remove('selected');
-    });
-    selectedButton.classList.add('selected');
+    selectedButton.classList.toggle('selected');
 
     const hasSelected = Array.from(answerButtonsElement.children).some(button => button.classList.contains('selected'));
     if (hasSelected) {
@@ -92,12 +88,15 @@ function selectAnswer(e) {
 function submitAnswer() {
     submitButton.classList.add('hide');
     const correctAnswers = shuffledQuestions[currentQuestionIndex].answer;
-    const selectedButton = Array.from(answerButtonsElement).find(button => button.classList.contains('selected'));
-    
-    if (selectedButton) {
-        const selectedAnswer = selectedButton.innerText;
+    const selectedButtons = Array.from(answerButtonsElement.children).filter(button => button.classList.contains('selected'));
+
+    if (selectedButtons.length > 0) {
+        const selectedAnswers = selectedButtons.map(button => button.innerText);
         
-        let isCorrect = correctAnswers.includes(selectedAnswer);
+        const sortedSelectedAnswers = [...selectedAnswers].sort();
+        const sortedCorrectAnswers = [...correctAnswers].sort();
+
+        let isCorrect = sortedSelectedAnswers.length === sortedCorrectAnswers.length && sortedSelectedAnswers.every((value, index) => value === sortedCorrectAnswers[index]);
 
         if (isCorrect) {
             score++;
